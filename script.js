@@ -57,7 +57,7 @@ document.getElementById('symptomForm').onsubmit = function(event) {
     {
       name: "Heart Attack",
       symptoms: ["chest pain", "shortness of breath", "sweating", "nausea"],
-      advice: "Chest pain with these symptoms may be serious. Seek emergency medical help immediately."
+      advice: "Chest pain with these symptoms may be serious as these are signs of a heart attack. Seek emergency medical help immediately."
     },
     {
       name: "Skin Allergy/Infection",
