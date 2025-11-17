@@ -1,4 +1,4 @@
-/* Reset default margins and paddings */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,25 +12,28 @@ body {
     padding: 20px;
 }
 
-/* Main heading */
-h1 {
+/* Make ANY main title bigger */
+h1, .main-title, #main-title {
     text-align: center;
-    font-size: 48px; /* Increased size */
-    margin-bottom: 40px; /* More spacing under heading */
+    font-size: 55px !important; /* Bigger and forced */
+    margin-bottom: 50px !important; /* More spacing under heading */
     color: #3b2f2f;
 }
 
-/* Symptom checker container */
-.symptom-checker {
-    background-color: #f1e1c2; /* Soft light brown */
+/* Move ANY symptom checker down */
+.symptom-checker,
+#symptom-checker,
+.checker-box,
+#checker-box {
+    background-color: #f1e1c2;
     padding: 25px;
     max-width: 700px;
-    margin: 80px auto 0 auto; /* Moved further down */
+    margin: 120px auto 0 auto !important; /* FORCE more down */
     border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
-/* Input and button */
+/* Inputs */
 input {
     width: 100%;
     padding: 12px;
@@ -40,6 +43,7 @@ input {
     font-size: 16px;
 }
 
+/* Button */
 button {
     width: 100%;
     padding: 12px;
@@ -56,7 +60,7 @@ button:hover {
     background-color: #735b38;
 }
 
-/* Results box */
+/* Result box */
 #result {
     margin-top: 20px;
     padding: 15px;
