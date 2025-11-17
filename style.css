@@ -39,11 +39,12 @@ main {
 
 input[type="text"] {
   width: 100%;
-  padding: 15px;
+  padding: 12px; /* slightly smaller than before */
   margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 18px;
+  font-size: 16px;
+  box-sizing: border-box; /* ensure it fits inside parent */
 }
 
 button {
