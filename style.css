@@ -8,7 +8,7 @@ body {
 }
 
 header h1 {
-  font-family: 'Verdana', sans-serif; /* Header font */
+  font-family: 'Verdana', sans-serif; /* Changed font */
   text-align: center;
   margin-bottom: 30px;
 }
@@ -26,7 +26,7 @@ main {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  flex: 0 0 500px; /* Larger box */
+  flex: 0 0 500px; /* make it larger */
   color: #000;
 }
 
@@ -37,7 +37,6 @@ main {
   text-shadow: 1px 1px 2px #000;
 }
 
-/* Input box fits neatly inside checker box */
 input[type="text"] {
   width: 100%;
   padding: 15px;
@@ -45,7 +44,6 @@ input[type="text"] {
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 18px;
-  box-sizing: border-box; /* ensures it fits inside parent */
 }
 
 button {
