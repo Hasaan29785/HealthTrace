@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #D2B48C; /* Light brown background */
+  background: linear-gradient(to right, #d6b885, #e0c18a); /* Smooth light brown gradient */
   color: white;
 }
 
