@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HealthTrace</title>
+  <title>HealthTrace Symptom Checker</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Main heading -->
   <header>
-    Welcome to HealthTrace
+    <h1>Welcome to the HealthTrace</h1>
   </header>
 
-  <!-- Symptom checker section -->
-  <section id="symptom-checker">
-    <h2>Symptom Checker</h2>
-    <form>
-      <label for="symptom">Enter your symptom:</label>
-      <input type="text" id="symptom" name="symptom">
-      <button type="submit">Check</button>
-    </form>
-    <div id="results"></div>
-  </section>
+  <main>
+    <section class="checker-highlight">
+      <h2>Symptom Checker</h2>
+      <form id="symptomForm">
+        <input type="text" id="symptoms" placeholder="Enter symptoms, separated by commas" required>
+        <button type="submit">Get Advice</button>
+      </form>
+      <div id="result"></div>
+    </section>
 
+    <aside class="disclaimer">
+      <p><strong>Disclaimer:</strong> This tool provides general information only. It does not replace professional medical advice. Consult a healthcare provider for any health concerns.</p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
