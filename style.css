@@ -3,15 +3,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background: linear-gradient(to right, #d6b885, #e0c18a); /* Smooth light brown gradient */
+  background: #000000; /* 🔥 Pure black background */
   color: white;
 }
 
 header h1 {
   font-family: 'Verdana', sans-serif;
   text-align: center;
-  margin-bottom: 50px; /* bigger gap now */
-  font-size: 55px; /* 🔥 much bigger heading */
+  margin-bottom: 50px;
+  font-size: 55px;
 }
 
 /* Layout */
@@ -19,7 +19,7 @@ main {
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 120px; /* 🔥 moves the box lower but still centered */
+  margin-top: 120px;
 }
 
 /* Symptom Checker Section */
@@ -28,7 +28,7 @@ main {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  flex: 0 0 500px; /* Larger box */
+  flex: 0 0 500px;
   color: #000;
 }
 
