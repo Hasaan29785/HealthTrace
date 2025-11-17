@@ -2,24 +2,32 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
-  background: #000000; /* 🔥 Pure black background */
+  padding: 0;
+  background-color: #000000; /* Full black background */
   color: white;
 }
 
+/* Header Background Bar */
+header {
+  background-color: #ffffff; /* White bar behind heading */
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Heading */
 header h1 {
   font-family: 'Verdana', sans-serif;
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 55px;
+  color: #e74c3c; /* Red heading */
+  font-size: 52px; /* Big heading */
+  margin: 0;
 }
 
 /* Layout */
 main {
   display: flex;
   justify-content: center;
+  margin-top: 80px; /* Push symptom checker down */
   position: relative;
-  margin-top: 120px;
 }
 
 /* Symptom Checker Section */
@@ -27,7 +35,7 @@ main {
   background-color: #fff;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 15px rgba(255,255,255,0.2);
   flex: 0 0 500px;
   color: #000;
 }
@@ -79,5 +87,5 @@ button:hover {
   border-radius: 10px;
   font-size: 12px;
   max-width: 250px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(255,255,255,0.3);
 }
