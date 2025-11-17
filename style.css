@@ -1,71 +1,81 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Page background */
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #d7c4a3; /* Light brown */
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to right, #d6b885, #e0c18a); /* Smooth light brown gradient */
+  color: white;
 }
 
-/* Make ANY main title bigger */
-h1, .main-title, #main-title {
-    text-align: center;
-    font-size: 55px !important; /* Bigger and forced */
-    margin-bottom: 50px !important; /* More spacing under heading */
-    color: #3b2f2f;
+header h1 {
+  font-family: 'Verdana', sans-serif; /* Changed font */
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-/* Move ANY symptom checker down */
-.symptom-checker,
-#symptom-checker,
-.checker-box,
-#checker-box {
-    background-color: #f1e1c2;
-    padding: 25px;
-    max-width: 700px;
-    margin: 120px auto 0 auto !important; /* FORCE more down */
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+/* Layout */
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
-/* Inputs */
-input {
-    width: 100%;
-    padding: 12px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border: 1px solid #8b7d6b;
-    font-size: 16px;
+/* Symptom Checker Section */
+.checker-highlight {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  flex: 0 0 500px; /* Larger box */
+  color: #000;
 }
 
-/* Button */
+.checker-highlight h2 {
+  color: #e74c3c; /* Highlighted title */
+  font-size: 28px; /* Bigger title */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
 button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 15px;
-    background-color: #8b6f47;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 18px;
-    cursor: pointer;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #735b38;
+  background-color: #c0392b;
 }
 
-/* Result box */
+/* Result styling */
 #result {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #fff7e8;
-    border-left: 5px solid #8b6f47;
-    border-radius: 6px;
-    font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Disclaimer styling */
+.disclaimer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  max-width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
