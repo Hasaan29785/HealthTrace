@@ -1,62 +1,45 @@
-// script.js — fixed and made more robust
-document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('symptomForm');
-  const inputEl = document.getElementById('symptoms');
-  const adviceEl = document.getElementById('advice');
+document.getElementById('symptomForm').onsubmit = function(event) {
+  event.preventDefault();
+  const input = document.getElementById('symptoms').value.toLowerCase();
+  const symptomsArray = input.split(',').map(s => s.trim());
 
   const diseases = [
     {
       name: "Common Cold",
       symptoms: ["cough", "sore throat", "runny nose"],
-      advice:
-        "You may be experiencing a common cold. Rest well and drink plenty of fluids. " +
-        "Use over-the-counter cold medicines to ease symptoms if needed. " +
-        "Avoid close contact with others while symptomatic to prevent spread. " +
-        "See a doctor if symptoms worsen or last longer than 7 days."
+      advice: "You may be experiencing a common cold. Rest as much as possible and drink warm fluids throughout the day. Over-the-counter cold remedies may help reduce symptoms temporarily. If symptoms last more than a week, consider consulting a healthcare professional."
     },
     {
       name: "Influenza (Flu)",
       symptoms: ["fever", "headache", "body aches", "fatigue"],
-      advice:
-        "Your symptoms may indicate influenza. Rest and keep well hydrated. " +
-        "Use fever reducers or pain relievers as appropriate. " +
-        "Avoid strenuous activity until recovery. " +
-        "Seek medical help if fever persists or breathing becomes difficult."
+      advice: "These symptoms suggest you may have influenza. Rest and stay well hydrated to support your recovery. Medications such as paracetamol can help reduce fever and pain. Seek medical attention if breathing becomes difficult or symptoms worsen after a few days."
     },
     {
       name: "COVID-19",
       symptoms: ["fever", "cough", "loss of taste", "loss of smell", "shortness of breath"],
-      advice:
-        "Your symptoms match possible COVID-19. Isolate from others and monitor symptoms closely. " +
-        "Stay hydrated and rest; use antipyretics if you have a fever. " +
-        "Get tested where testing is available to confirm. " +
-        "Seek immediate care if you develop breathing difficulties."
+      advice: "Your symptoms may be related to COVID-19. You should isolate yourself and avoid contact with others. Make sure to stay hydrated and monitor your breathing closely. Contact a healthcare provider to arrange testing and follow official health guidelines."
     },
     {
       name: "Migraine",
       symptoms: ["headache", "light sensitivity", "sound sensitivity", "nausea"],
-      advice:
-        "These symptoms suggest a migraine. Rest in a quiet, dark room and avoid screens. " +
-        "Use migraine-specific medication or OTC pain relief if recommended for you. " +
-        "Stay hydrated and avoid known triggers. " +
-        "See a doctor if headaches become frequent or severe."
+      advice: "A migraine attack is possible based on your symptoms. Rest in a quiet, dark room and avoid bright lights or loud noises. Drinking water and taking pain relievers may help reduce discomfort. If migraines become frequent, consult a doctor for long-term management."
     },
     {
       name: "Food Poisoning",
       symptoms: ["nausea", "vomiting", "diarrhea", "stomach ache"],
-      advice:
-        "This may be food poisoning. Sip clear fluids and consider oral rehydration solutions. " +
-        "Avoid solid or fatty foods until vomiting subsides. " +
-        "Rest and monitor for signs of dehydration. " +
-        "Seek medical help if severe dehydration, blood in stool, or high fever occur."
+      advice: "These signs could indicate food poisoning. Drink plenty of fluids to prevent dehydration and avoid heavy foods until symptoms improve. Electrolyte drinks can help replace lost minerals. Seek medical help if vomiting is severe or symptoms do not improve within 24 hours."
     },
     {
       name: "Allergy",
       symptoms: ["sneezing", "runny nose", "itchy eyes"],
-      advice:
-        "These symptoms suggest an allergic reaction. Avoid the suspected allergen when possible. " +
-        "Over-the-counter antihistamines can reduce symptoms. " +
-        "Keep windows closed on high-pollen days and wash hands after being outdoors. " +
-        "Seek urgent care if you experience difficulty breathing or throat swelling."
+      advice: "Your symptoms may be caused by an allergic reaction. Try to avoid known triggers and keep your environment clean. Over-the-counter antihistamines can help relieve sneezing and itching. If symptoms persist, consider consulting an allergy specialist."
     },
     {
+      name: "Stomach Ulcer",
+      symptoms: ["stomach pain", "nausea", "heartburn"],
+      advice: "These symptoms may indicate a stomach ulcer. Avoid spicy, acidic, or greasy foods as they may worsen discomfort. Eating smaller meals more frequently can also help. A doctor can provide proper diagnosis and medication such as antacids or proton pump inhibitors."
+    },
+    {
+      name: "Diabetes",
+      symptoms: ["frequent urination", "thirst", "fatigue", "weight loss"],
+      advice: "These symptoms are commonly associated with diabetes.
