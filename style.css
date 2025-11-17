@@ -9,26 +9,13 @@ body {
 /* Header styles */
 header {
   background-color: white; /* header background */
-  color: red; /* header text */
+  color: red; /* heading text color */
   padding: 20px;
-  position: relative; /* needed for positioning the image */
   text-align: center;
-  font-size: 48px; /* bigger heading */
+  font-size: 48px; /* heading size */
 }
 
-/* Header image styles */
-header img {
-  position: absolute; /* place it relative to header */
-  top: 50%; /* vertical center */
-  right: 20px; /* distance from right edge */
-  transform: translateY(-50%); /* exact vertical centering */
-  width: 80px; /* square size */
-  height: 80px; /* square size */
-  object-fit: cover; /* fills square nicely */
-  border-radius: 0; /* keeps it square */
-}
-
-/* Symptom checker styles (basic example) */
+/* Symptom checker styles */
 #symptom-checker {
   padding: 20px;
   text-align: center;
