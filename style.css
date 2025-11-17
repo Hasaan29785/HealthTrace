@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: black; /* page background */
   font-family: Arial, sans-serif;
+  color: white; /* default text color */
 }
 
 /* Header styles */
@@ -25,4 +26,27 @@ header img {
   height: 80px; /* square size */
   object-fit: cover; /* fills square nicely */
   border-radius: 0; /* keeps it square */
+}
+
+/* Symptom checker styles (basic example) */
+#symptom-checker {
+  padding: 20px;
+  text-align: center;
+}
+
+#symptom-checker input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+}
+
+#symptom-checker button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#results {
+  margin-top: 20px;
+  font-size: 18px;
 }
