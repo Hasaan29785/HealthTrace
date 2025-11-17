@@ -1,39 +1,91 @@
-/* General page styles */
+/* General Styles */
 body {
-  margin: 0;
-  background-color: black; /* page background */
   font-family: Arial, sans-serif;
-  color: white; /* default text color */
+  margin: 0;
+  padding: 0;
+  background-color: #000000; /* Full black background */
+  color: white;
 }
 
-/* Header styles */
+/* Header Background Bar */
 header {
-  background-color: white; /* header background */
-  color: red; /* heading text color */
-  padding: 20px;
-  text-align: center;
-  font-size: 48px; /* heading size */
-}
-
-/* Symptom checker styles */
-#symptom-checker {
-  padding: 20px;
+  background-color: #ffffff; /* White bar behind heading */
+  padding: 30px 20px;
   text-align: center;
 }
 
-#symptom-checker input[type="text"] {
-  padding: 10px;
-  font-size: 16px;
-  width: 200px;
+/* Heading */
+header h1 {
+  font-family: 'Verdana', sans-serif;
+  color: #e74c3c; /* Red heading */
+  font-size: 52px; /* Big heading */
+  margin: 0;
 }
 
-#symptom-checker button {
-  padding: 10px 20px;
-  font-size: 16px;
+/* Layout */
+main {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px; /* Push symptom checker down */
+  position: relative;
+}
+
+/* Symptom Checker Section */
+.checker-highlight {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+  flex: 0 0 500px;
+  color: #000;
+}
+
+.checker-highlight h2 {
+  color: #e74c3c;
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 8px;
+  font-size: 18px;
   cursor: pointer;
 }
 
-#results {
+button:hover {
+  background-color: #c0392b;
+}
+
+/* Result styling */
+#result {
   margin-top: 20px;
-  font-size: 18px;
+}
+
+/* Disclaimer styling */
+.disclaimer {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff3cd;
+  color: #856404;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  max-width: 250px;
+  box-shadow: 0 2px 8px rgba(255,255,255,0.3);
 }
