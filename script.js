@@ -8,36 +8,95 @@ window.onload = function() {
       {
         name: "Common Cold",
         symptoms: ["cough", "sore throat", "runny nose"],
-        advice: "You may have a common cold. It's caused by a viral infection of the upper respiratory tract. Rest is crucial, and staying hydrated helps your immune system. Warm fluids like tea or soup can ease throat irritation. Over-the-counter cold medicines may help with symptoms. Avoid spreading the virus by washing hands frequently and covering your mouth when coughing. If symptoms last more than 7–10 days or worsen, consult a healthcare professional."
+        advice: "Common cold is a viral infection of the upper respiratory tract. Rest well and drink fluids to stay hydrated. Over-the-counter cold medicines may help relieve symptoms. Avoid cold drinks and stay warm. If symptoms persist more than 7–10 days, consult a healthcare professional."
       },
       {
         name: "Influenza (Flu)",
         symptoms: ["fever", "headache", "body aches", "fatigue"],
-        advice: "Your symptoms suggest influenza. This is a contagious viral infection that can lead to severe fatigue and body aches. Rest completely and drink plenty of fluids. Fever reducers such as paracetamol or ibuprofen may help. Avoid close contact with others to prevent spreading. If breathing becomes difficult, or symptoms worsen, seek medical attention immediately. Annual flu vaccination is recommended to prevent future infections."
+        advice: "Flu is a contagious viral infection. Get plenty of rest, drink fluids, and take fever reducers if needed. Avoid contact with others to prevent spreading. Seek medical attention if symptoms worsen or breathing becomes difficult. Annual vaccination is recommended to prevent infection."
       },
       {
         name: "COVID-19",
         symptoms: ["fever", "cough", "loss of taste", "loss of smell", "shortness of breath"],
-        advice: "These symptoms may indicate COVID-19. It's a contagious respiratory infection that can range from mild to severe. Isolate from others immediately and monitor your breathing closely. Stay hydrated, rest, and maintain nutrition. Get tested for confirmation and follow public health guidelines. Seek urgent medical care if you experience difficulty breathing, persistent chest pain, or confusion. Notify close contacts and maintain hygiene precautions."
+        advice: "COVID-19 is a contagious respiratory infection. Isolate immediately and monitor breathing. Stay hydrated and rest. Contact a healthcare provider for testing and follow official guidelines. Seek urgent care if you experience severe shortness of breath or chest pain."
       },
       {
         name: "Migraine",
         symptoms: ["headache", "light sensitivity", "sound sensitivity", "nausea"],
-        advice: "You may be experiencing a migraine, which is a neurological condition causing severe headaches, often accompanied by nausea and light/sound sensitivity. Rest in a quiet, dark room and avoid bright lights or loud noises. Hydrate well and consider over-the-counter migraine-specific medications. Track triggers to help prevent future attacks. If migraines are frequent, consult a neurologist for preventive therapy."
+        advice: "Migraine is a neurological condition causing severe headaches, nausea, and light/sound sensitivity. Rest in a quiet, dark room, drink water, and consider migraine-safe pain relief. Track triggers and consult a doctor if migraines are frequent or worsening."
       },
       {
         name: "Food Poisoning",
         symptoms: ["nausea", "vomiting", "diarrhea", "stomach ache"],
-        advice: "These symptoms suggest food poisoning, usually caused by consuming contaminated food or water. Drink plenty of fluids to prevent dehydration and consider oral rehydration solutions. Avoid solid, heavy meals until symptoms improve. Rest is important. Seek medical attention if you have high fever, blood in stools, or symptoms lasting more than 24 hours. Good food hygiene can prevent recurrence."
+        advice: "Food poisoning usually results from contaminated food or water. Drink plenty of fluids to prevent dehydration. Eat light meals and rest. Oral rehydration solutions may help. Seek medical attention if high fever, blood in stools, or symptoms persist."
       },
       {
         name: "Allergy",
         symptoms: ["sneezing", "runny nose", "itchy eyes"],
-        advice: "Your symptoms may indicate an allergy. This could be triggered by pollen, dust, or other environmental factors. Avoid allergens whenever possible. Antihistamines can relieve symptoms. Keeping your home clean and using air filters can help. If symptoms persist, consult an allergy specialist to identify triggers and develop a management plan."
+        advice: "Allergies can be triggered by pollen, dust, or other factors. Avoid allergens and maintain cleanliness. Antihistamines may relieve symptoms. Consult an allergy specialist if symptoms persist or worsen."
+      },
+      {
+        name: "Stomach Ulcer",
+        symptoms: ["stomach pain", "nausea", "heartburn"],
+        advice: "Stomach ulcers are often caused by excess acid or infection. Avoid spicy/acidic foods, eat smaller meals, and rest. Over-the-counter antacids may help. Consult a doctor for proper diagnosis and treatment."
+      },
+      {
+        name: "Diabetes",
+        symptoms: ["frequent urination", "thirst", "fatigue", "weight loss"],
+        advice: "Diabetes affects blood sugar regulation. Monitor blood sugar, drink water, avoid sugary foods, and rest. Consult a healthcare professional for diagnosis, medication, and lifestyle guidance."
+      },
+      {
+        name: "Hypertension (High Blood Pressure)",
+        symptoms: ["headache", "nosebleed", "dizziness", "blurred vision"],
+        advice: "High blood pressure may cause these symptoms. Reduce stress, avoid salty foods, stay hydrated, and monitor blood pressure. Seek medical advice for long-term management."
+      },
+      {
+        name: "Asthma",
+        symptoms: ["wheezing", "shortness of breath", "cough"],
+        advice: "Asthma is a chronic respiratory condition. Use an inhaler if prescribed, avoid triggers like smoke/dust, stay hydrated, and rest. Seek urgent medical care if breathing worsens."
+      },
+      {
+        name: "Heart Attack",
+        symptoms: ["chest pain", "shortness of breath", "sweating", "nausea"],
+        advice: "These are serious signs of a heart attack. Call emergency services immediately. Sit or lie down and stay calm. Do not exert yourself. Follow medical instructions carefully."
+      },
+      {
+        name: "Skin Allergy/Infection",
+        symptoms: ["rash", "itching", "redness", "swelling"],
+        advice: "Skin allergies or infections can cause irritation. Keep the area clean, avoid scratching, use cool compresses, and monitor symptoms. Consult a doctor if it worsens."
+      },
+      {
+        name: "Arthritis",
+        symptoms: ["joint pain", "swelling", "stiffness"],
+        advice: "Arthritis causes joint pain and stiffness. Gentle stretching, warm compresses, and resting affected joints help. Consult a doctor for diagnosis and treatment options."
+      },
+      {
+        name: "Anemia",
+        symptoms: ["fatigue", "weakness", "pale skin", "shortness of breath"],
+        advice: "Anemia is often due to low iron or vitamins. Eat iron-rich foods, stay hydrated, and get blood tests. Consult a doctor for proper treatment."
+      },
+      {
+        name: "Spinal/Nerve Issue",
+        symptoms: ["back pain", "numbness", "tingling", "leg pain"],
+        advice: "Back or nerve issues can cause pain or numbness. Avoid heavy lifting, do gentle stretching, rest, and consult a medical professional if pain worsens."
+      },
+      {
+        name: "Meningitis",
+        symptoms: ["fever", "vomiting", "neck pain", "headache", "stiff neck"],
+        advice: "Meningitis is a serious infection. Seek emergency medical care immediately. Keep lights dim and avoid movement. Follow hospital instructions carefully."
+      },
+      {
+        name: "Tuberculosis",
+        symptoms: ["persistent cough", "weight loss", "fever", "night sweats"],
+        advice: "Tuberculosis affects the lungs. Get tested for confirmation, avoid close contact, follow treatment, maintain nutrition, and rest."
+      },
+      {
+        name: "Pneumonia",
+        symptoms: ["cough", "fever", "shortness of breath", "chest pain"],
+        advice: "Pneumonia is a lung infection. Seek medical care immediately. Rest, hydrate, take prescribed antibiotics if any, and monitor breathing."
       }
     ];
 
-    // Find the most likely matching disease(s)
     const matchedDiseases = diseases.filter(disease =>
       disease.symptoms.some(symptom => symptomsArray.includes(symptom))
     );
