@@ -38,13 +38,12 @@ main {
 }
 
 input[type="text"] {
-  width: 100%;
-  padding: 12px; /* slightly smaller than before */
-  margin-bottom: 20px;
+  width: 100%;       /* full width of the checker box */
+  padding: 12px;     /* adjust size so it doesn’t overflow */
+  font-size: 16px;   /* readable but not huge */
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 16px;
-  box-sizing: border-box; /* ensure it fits inside parent */
+  box-sizing: border-box; /* ensures it stays inside the parent box */
 }
 
 button {
