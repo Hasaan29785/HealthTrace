@@ -3,51 +3,56 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-color: #f4f4f4;
+  background-color: #800000; /* Maroonish background */
+  color: white;
 }
 
 header h1 {
   font-family: 'Verdana', sans-serif; /* Changed font */
   text-align: center;
-  color: #2c3e50;
   margin-bottom: 30px;
 }
 
+/* Layout */
 main {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  position: relative;
 }
 
 /* Symptom Checker Section */
 .checker-highlight {
   background-color: #fff;
-  padding: 20px;
+  padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  flex: 2;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  flex: 0 0 500px; /* make it larger */
+  color: #000;
 }
 
 .checker-highlight h2 {
   color: #e74c3c; /* Highlighted title */
-  margin-bottom: 15px;
+  font-size: 28px; /* Bigger title */
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px #000;
 }
 
 input[type="text"] {
   width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
+  padding: 15px;
+  margin-bottom: 20px;
   border-radius: 8px;
   border: 1px solid #ccc;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 button {
   background-color: #e74c3c;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 15px 20px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
 }
 
@@ -62,11 +67,14 @@ button:hover {
 
 /* Disclaimer styling */
 .disclaimer {
-  flex: 1;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
   background-color: #fff3cd;
-  padding: 15px;
-  border-left: 5px solid #ffeeba;
-  border-radius: 10px;
-  font-size: 14px;
   color: #856404;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 12px;
+  max-width: 250px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
