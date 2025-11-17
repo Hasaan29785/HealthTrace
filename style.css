@@ -8,7 +8,7 @@ body {
 }
 
 header h1 {
-  font-family: 'Verdana', sans-serif; /* Changed font */
+  font-family: 'Verdana', sans-serif; /* Header font */
   text-align: center;
   margin-bottom: 30px;
 }
@@ -26,24 +26,25 @@ main {
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-  flex: 0 0 500px; /* make it larger */
+  flex: 0 0 500px; /* Bigger box */
   color: #000;
 }
 
 .checker-highlight h2 {
   color: #e74c3c; /* Highlighted title */
-  font-size: 28px; /* Bigger title */
+  font-size: 28px;
   margin-bottom: 20px;
   text-shadow: 1px 1px 2px #000;
 }
 
 input[type="text"] {
-  width: 100%;       /* full width of the checker box */
-  padding: 12px;     /* adjust size so it doesn’t overflow */
-  font-size: 16px;   /* readable but not huge */
+  width: 100%;       /* Fit inside box */
+  padding: 12px;     /* Adjust size */
+  font-size: 16px;   /* Readable */
   border-radius: 8px;
   border: 1px solid #ccc;
-  box-sizing: border-box; /* ensures it stays inside the parent box */
+  box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 button {
